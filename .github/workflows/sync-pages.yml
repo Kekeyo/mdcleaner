@@ -1,0 +1,27 @@
+name: Sync web/ to gh-pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'web/**'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push web/ subtree to gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git subtree split --prefix=web -b gh-pages-deploy
+          git push origin gh-pages-deploy:gh-pages --force
