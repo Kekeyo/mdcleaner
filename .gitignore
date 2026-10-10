@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# 依赖
+tools/node_modules/
+
+# 用户数据：项目存在这里，不进版本库
+output/
+
+# 大模型设置（只存本机）
+llm_settings.json
+llm_usage.jsonl
+events.log
+
+# 系统
+.DS_Store
+Thumbs.db
+*.tmp
