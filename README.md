@@ -1,5 +1,7 @@
 # Markdown 公式清洗工作台 (mdcleaner)
 
+🌐 **在线直接使用网址**：[**https://kekeyo.github.io/mdcleaner/**](https://kekeyo.github.io/mdcleaner/)
+
 面向理工科教材与习题 Markdown（KaTeX）的高精度公式清洗、实时渲染核对与 AI 视觉转写工作台。支持 **GitHub Pages 纯前端在线即开即用** 与 **本地 Python 服务启动** 双模式。
 
 ## ✨ 核心特性
@@ -13,7 +15,8 @@
 ## 🚀 使用方式
 
 ### 1. 在线直接使用（GitHub Pages）
-直接访问在线工作台网址即可使用全部功能。如需使用 AI 截图识别或 AI 助手，点击页面右下角 **🤖 AI 助手 → 顶部「先设置模型」** 填入您的 API Key（仅保存在当前浏览器本地）。
+- **在线网址**：[https://kekeyo.github.io/mdcleaner/](https://kekeyo.github.io/mdcleaner/)
+- 直接点击上方网址即可使用全部功能。如需使用 AI 截图识别或 AI 助手，点击页面右下角 **🤖 AI 助手 → 顶部「先设置模型」** 填入您的 API Key（仅保存在当前浏览器本地）。
 
 ### 2. 本地服务启动（可选）
 ```bash
